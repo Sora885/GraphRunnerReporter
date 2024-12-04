@@ -40,3 +40,43 @@ Run the following command to authenticate and retrieve your tokens:
 ```
 Get-GraphTokens
 ```
+### Step 3: Run GraphRunnerReporter
+
+Once the $tokens variable is defined, use the following commands to generate your reports:
+## HTML Report
+```
+.\Export-GraphData.ps1 -Tokens $tokens -OutputFilePath "GraphReport.html" -ReportType "HTML"
+```
+## JSON Report
+```
+.\Export-GraphData.ps1 -Tokens $tokens -OutputFilePath "ExportedData.json" -ReportType "JSON"
+```
+
+### Parameters
+-Tokens : Object containing the access_token and scope.
+-OutputFilePath : Path to save the generated report.
+-ReportType : Report format (JSON or HTML)
+
+### Endpoint and Permissions
+
+Endpoint : https://graph.microsoft.com/v1.0/me
+Permissions requises : User.Read, User.ReadWrite, User.Read.All
+
+Endpoint : https://graph.microsoft.com/v1.0/me/messages
+Permissions requises : Mail.Read, Mail.ReadWrite
+
+Endpoint : https://graph.microsoft.com/v1.0/me/drive/root/children
+Permissions requises : Files.Read, Files.ReadWrite
+
+Endpoint : https://graph.microsoft.com/v1.0/security/alerts
+Permissions requises : SecurityEvents.Read.All, SecurityEvents.ReadWrite.All
+
+Endpoint : https://graph.microsoft.com/v1.0/groups
+Permissions requises : Group.Read.All, Group.ReadWrite.All
+
+Endpoint : https://graph.microsoft.com/v1.0/applications
+Permissions requises : Application.Read.All, Application.ReadWrite.OwnedBy
+
+Endpoint : https://graph.microsoft.com/v1.0/policies/conditionalAccessPolicies
+Permissions requises : Policy.Read.All, Policy.ReadWrite.ConditionalAccess
+
