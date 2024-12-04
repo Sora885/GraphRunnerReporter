@@ -22,7 +22,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/GraphRunnerReporter.git
+   git clone https://github.com/Sora885/GraphRunnerReporter.git
    cd GraphRunnerReporter
 
 ## Usage Guide
