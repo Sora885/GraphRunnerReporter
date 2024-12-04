@@ -53,10 +53,11 @@ Once the $tokens variable is defined, use the following commands to generate you
 ```
 
 ### Parameters
+```
 -Tokens : Object containing the access_token and scope.
 -OutputFilePath : Path to save the generated report.
 -ReportType : Report format (JSON or HTML)
-
+```
 ### Endpoint and Permissions
 
 Endpoint : https://graph.microsoft.com/v1.0/me
