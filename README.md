@@ -24,3 +24,19 @@
    ```bash
    git clone https://github.com/your-username/GraphRunnerReporter.git
    cd GraphRunnerReporter
+
+## Usage Guide
+
+### Step 1: Download and Run GraphRunner
+
+To start, download and execute **GraphRunner** to obtain your Microsoft Graph API token:
+
+```powershell
+IEX (iwr 'https://raw.githubusercontent.com/dafthack/GraphRunner/main/GraphRunner.ps1')
+```
+### Step 2: Authenticate and Obtain Tokens
+
+Run the following command to authenticate and retrieve your tokens:
+```
+Get-GraphTokens
+```
